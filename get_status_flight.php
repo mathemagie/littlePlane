@@ -1,4 +1,5 @@
 <?php
+	echo "hdgshgd";
                 $id = '5686558';
                 $id = '57cccb2';
                 $url = 'http://krk.fr24.com/_external/planedata_json.1.3.php?f=' . $id;
