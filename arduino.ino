@@ -50,12 +50,18 @@ void loop() {
         monServo.write(180);
        delay(1000);      
     }
-    if (flight_status) {
-      Serial.println("flight airborad");
+    if (flight_status == 2) {
+      Serial.println("flight airborne");
+        monServo.write(90);
+      delay(1000);      
+    }
+    
+    if (flight_status == 1) {
+      Serial.println("flight landed");
         monServo.write(90);
       delay(1000);      
     }else {
-       monServo.write(180);
+        monServo.write(180);
        delay(1000);      
     }
    readString=""; 
