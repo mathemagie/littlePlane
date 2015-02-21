@@ -60,12 +60,6 @@ void loop() {
       delay(1000);      
     }
     
-    if (flight_status == 3) {
-      Serial.println("flight sheduled");
-       // monServo.write(170);
-      delay(1000);      
-    }
-    
     if (flight_status == 1) {
       Serial.println("flight landed");
       monServo.write(180);//en bas
