@@ -8,6 +8,9 @@
   by Airbus Team XX
  */
 
+//we declare our variables
+int LDR_pin = 0;  // analog pin used to connect the LDR
+
 // the setup routine runs once when you press reset:
 void setup() {
   // initialize serial communication at 9600 bits per second:
@@ -20,7 +23,7 @@ void setup() {
 // the loop routine runs over and over again forever:
 void loop() {
   // read the input on analog pin 0:
-  int sensorValue = analogRead(A0);
+  int sensorValue = analogRead(LDR_pin);
   // print out the value you read:
   Serial.println(sensorValue);
   delay(1);        // delay in between reads for stability
