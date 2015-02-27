@@ -8,6 +8,8 @@ const int ledPinGround = 12;
 const int plane_flying = 2;
 const int plane_landed = 1;
 
+const int servoPin = 9;
+
 String readString;
 
 Servo monServo;
@@ -18,7 +20,7 @@ void setup() {
    Bridge.begin();   // Initialize the Bridge
    pinMode(ledPinSea, OUTPUT);
    pinMode(ledPinGround, OUTPUT);
-   monServo.attach(9); 
+   monServo.attach(servoPin); 
    Serial.begin(9600);
 
   while (!Serial); // wait for a serial connection
