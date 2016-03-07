@@ -81,7 +81,7 @@ void loop() {
   // B is a cypher indicationg is the sea status (0 or 1) for ground or sea
   
   HttpClient client;
-  client.get("http://mathemagie.net/littleplane/get_flight_status.php?team_id=1");
+  client.get("http://mathemagie.net/projects/littleplane/get_flight_status.php?team_id=1");
   
   // Here println is used as a trick to inform you that the get has been requested
   // the words run httpget will be printed on your serial monitor
